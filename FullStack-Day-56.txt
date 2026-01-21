@@ -1,0 +1,42 @@
+Day 56:
+==========
+
+Logging Module in Python
+============================
+The logging module is used to record program execution details such as errors, warnings, and informational messages.
+It is preferred over print() because it supports log levels, formatting, and file handling.
+
+Log Levels
+
+DEBUG – Detailed diagnostic info
+
+INFO – General messages
+
+WARNING – Potential issues
+
+ERROR – Serious problems
+
+CRITICAL – Program failure
+
+Basic Example
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logging.info("Program started")
+logging.warning("Low memory")
+logging.error("An error occurred")
+
+Logging to a File
+logging.basicConfig(
+    filename="app.log",
+    level=logging.ERROR
+)
+logging.error("File error")
+
+Key Points
+
+Helps in debugging and monitoring
+
+Supports file and console logging
+
+Used in real-world applications
